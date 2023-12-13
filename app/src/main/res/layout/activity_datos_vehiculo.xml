@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_1067591_rm222_mind_29"
     tools:context=".DatosVehiculo">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="408dp"
+        android:layout_height="359dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_cmv_removebg_preview" />
 
     <TextView
         android:id="@+id/textView"
@@ -26,6 +38,7 @@
         android:layout_height="31dp"
         android:text="PLACA:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +64,7 @@
         android:layout_height="31dp"
         android:text="MARCA:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,6 +80,7 @@
         android:layout_height="39dp"
         android:text="INGRESE SUS NOMBRES:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,6 +96,7 @@
         android:layout_height="31dp"
         android:text="AÑO FAB:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,6 +127,7 @@
         android:layout_height="31dp"
         android:text="COLOR:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,6 +143,7 @@
         android:layout_height="31dp"
         android:text="MULTAS:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,6 +159,7 @@
         android:layout_height="31dp"
         android:text="VALOR:"
         android:textAlignment="viewStart"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -154,7 +173,7 @@
         android:id="@+id/textView9"
         android:layout_width="273dp"
         android:layout_height="40dp"
-        android:text="INGRESE SUS CEDULA:"
+        android:text="INGRESE SU CEDULA:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -163,21 +182,24 @@
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.101"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="383dp"
-        android:layout_height="53dp"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
         android:text="DATOS PERSONALES"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textSize="38sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <Spinner
         android:id="@+id/cbxcolor"
@@ -209,6 +231,7 @@
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/celeste"
         android:text="CALCULAR"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -300,4 +323,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.525"
         tools:text="AÑO DE FABRICACION" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

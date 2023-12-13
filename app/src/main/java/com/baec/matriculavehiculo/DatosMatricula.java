@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class DatosMatricula extends AppCompatActivity {
 
-    TextView txvCedula, txvNombres, txvValorPlaca, txvValorAnio, txvValorMarca, txvValorMultas, txvValorTotal, txvTipo, txvColor;
+    TextView txvCedula, txvNombres, txvValorPlaca, txvValorAnio, txvValorMarca, txvValorMultas, txvValorTotal, txvTipo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,6 @@ public class DatosMatricula extends AppCompatActivity {
         txvCedula = findViewById(R.id.tvCedula);
         txvNombres = findViewById(R.id.tvNombres);
         txvTipo = findViewById(R.id.tvTipo);
-        txvColor = findViewById(R.id.tvColor);
         txvValorPlaca = findViewById(R.id.tvValorPlaca);
         txvValorAnio = findViewById(R.id.tvValorAnio);
         txvValorMarca = findViewById(R.id.tvValorMarca);
@@ -46,8 +45,7 @@ public class DatosMatricula extends AppCompatActivity {
 
         txvCedula.setText(cedulaP);
         txvNombres.setText(nombresP);
-        txvTipo.setText(tipoV+" "+marcaV);
-        txvColor.setText(colorV);
+        txvTipo.setText(tipoV+" "+marcaV+" "+colorV);
         txvValorPlaca.setText("$"+valorPlaca);
         txvValorAnio.setText("$"+valorAnio);
         txvValorMarca.setText("$"+valorMarca);
@@ -67,7 +65,8 @@ public class DatosMatricula extends AppCompatActivity {
         if (cedula.startsWith("1") && placa.contains("I")) {
             // Calcula el 5% del sueldo básico para renovación de placas
             double porcentajeRenovacion = 0.05;
-            return sueldoBasico * porcentajeRenovacion;
+            double valorPlaca = sueldoBasico * porcentajeRenovacion;
+            return valorPlaca;
         }
         return 0;
     }

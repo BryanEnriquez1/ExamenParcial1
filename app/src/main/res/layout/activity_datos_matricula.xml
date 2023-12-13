@@ -4,13 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_1067591_rm222_mind_29"
     tools:context=".DatosMatricula">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="359dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_cmv_removebg_preview" />
 
     <Button
         android:id="@+id/btRegresa"
-        android:layout_width="151dp"
-        android:layout_height="53dp"
+        android:layout_width="168dp"
+        android:layout_height="54dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/celeste"
         android:text="REGRESAR"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -22,6 +35,7 @@
         android:id="@+id/tvTotal"
         android:layout_width="165dp"
         android:layout_height="38dp"
+        android:backgroundTint="@color/black"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -37,15 +51,114 @@
         android:id="@+id/textView12"
         android:layout_width="383dp"
         android:layout_height="53dp"
+        android:backgroundTint="@color/black"
         android:text="PAGO DE MATRICULA"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textSize="38sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/tvCedula"
+        android:layout_width="241dp"
+        android:layout_height="33dp"
+        android:backgroundTint="@color/black"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        tools:text="CEDULA" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:backgroundTint="@color/black"
+        android:text="CEDULA:"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:text="VEHICULO:"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:backgroundTint="@color/black"
+        android:text="NOMBRES COMPLETOS:"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <TextView
+        android:id="@+id/tvTipo"
+        android:layout_width="377dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@color/black"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        tools:text="T" />
+
+    <TextView
+        android:id="@+id/tvNombres"
+        android:layout_width="381dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295"
+        tools:text="NOMBRES" />
 
     <TextView
         android:id="@+id/tvValorPlaca"
@@ -60,42 +173,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.531"
-        tools:text="VP" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="288dp"
-        android:layout_height="38dp"
-        android:text="NOMBRES COMPLETOS:"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
-
-    <TextView
-        android:id="@+id/tvTipo"
-        android:layout_width="377dp"
-        android:layout_height="35dp"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455"
-        tools:text="T" />
+        tools:text="VP"
+        android:backgroundTint="@color/black" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="228dp"
         android:layout_height="35dp"
+        android:backgroundTint="@color/black"
         android:text="VALOR POR PLACA:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
@@ -108,54 +193,10 @@
         app:layout_constraintVertical_bias="0.528" />
 
     <TextView
-        android:id="@+id/tvCedula"
-        android:layout_width="241dp"
-        android:layout_height="33dp"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        tools:text="CEDULA" />
-
-    <TextView
-        android:id="@+id/tvNombres"
-        android:layout_width="381dp"
-        android:layout_height="40dp"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305"
-        tools:text="NOMBRES" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="155dp"
-        android:layout_height="40dp"
-        android:text="VEHICULO:"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
         android:id="@+id/tvValorAnio"
         android:layout_width="165dp"
         android:layout_height="38dp"
+        android:backgroundTint="@color/black"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -171,6 +212,7 @@
         android:id="@+id/textView16"
         android:layout_width="236dp"
         android:layout_height="37dp"
+        android:backgroundTint="@color/black"
         android:text="VALOR POR MULTAS:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
@@ -186,6 +228,7 @@
         android:id="@+id/textView17"
         android:layout_width="228dp"
         android:layout_height="35dp"
+        android:backgroundTint="@color/black"
         android:text="VALOR POR MARCA:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
@@ -201,6 +244,7 @@
         android:id="@+id/textView18"
         android:layout_width="228dp"
         android:layout_height="35dp"
+        android:backgroundTint="@color/black"
         android:text="VALOR POR AÑO:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
@@ -216,6 +260,7 @@
         android:id="@+id/tvValorMultas"
         android:layout_width="153dp"
         android:layout_height="40dp"
+        android:backgroundTint="@color/black"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -228,24 +273,10 @@
         tools:text="VML" />
 
     <TextView
-        android:id="@+id/tvColor"
-        android:layout_width="165dp"
-        android:layout_height="38dp"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386"
-        tools:text="C" />
-
-    <TextView
         android:id="@+id/textView19"
         android:layout_width="228dp"
         android:layout_height="35dp"
+        android:backgroundTint="@color/black"
         android:text="VALOR TOTAL:"
         android:textAlignment="viewStart"
         android:textSize="24sp"
@@ -261,6 +292,7 @@
         android:id="@+id/tvValorMarca"
         android:layout_width="165dp"
         android:layout_height="38dp"
+        android:backgroundTint="@color/black"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -272,18 +304,4 @@
         app:layout_constraintVertical_bias="0.702"
         tools:text="VM" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="131dp"
-        android:layout_height="32dp"
-        android:text="CEDULA:"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
 </androidx.constraintlayout.widget.ConstraintLayout>
