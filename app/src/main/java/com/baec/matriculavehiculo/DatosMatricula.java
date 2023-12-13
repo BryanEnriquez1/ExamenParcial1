@@ -110,7 +110,8 @@ public class DatosMatricula extends AppCompatActivity {
         int sueldoBasico = 435;
         if (cantidadMultas > 0) {
             double porcentajeMulta = 0.25;
-            return sueldoBasico * porcentajeMulta;
+            double valorMulta = sueldoBasico * porcentajeMulta;
+            return valorMulta;
         }
         return 0;
     }
